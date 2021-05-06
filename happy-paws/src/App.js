@@ -7,12 +7,20 @@ import {Train} from './Train.js';
 import {NoMatch} from './NoMatch.js';
 import {Layout} from './components/Layout.js';
 import { NavigationBar } from './components/NavigationBar.js';
+import {Jumbotron} from 'react-bootstrap';
+import './components/style.css'
 
 class App extends Component {
   render() {
     return (
+      
     <React.Fragment>
     <NavigationBar />
+    <div className="container">
+    <Jumbotron fluid>
+    <h1>Happy Paws Clubhouse</h1>
+    </Jumbotron>
+    </div>
       <Layout>
         <Router>
           <Switch>
@@ -25,8 +33,10 @@ class App extends Component {
         </Router>
       </Layout>
     </React.Fragment>
-  );
+
+    )}
 }
-}
+
+
 
 export default App;
