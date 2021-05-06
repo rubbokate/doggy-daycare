@@ -1,11 +1,10 @@
 import React from 'react';
-
+import Pupcake from './components/pupcake-1.jpeg'
+import Jersery from './components/jersery-1.jpeg'
 
 
 export const Home = () => (
         <div>
-        
-<h2>Goody Shop</h2>
-<p>Get some yummy homemade goodies from the shop</p>
+<img id="jersery" alt="chihuahua in a blanket" src={Jersery}/>
         </div>
         )

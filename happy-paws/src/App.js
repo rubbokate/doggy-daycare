@@ -9,6 +9,8 @@ import {Layout} from './components/Layout.js';
 import { NavigationBar } from './components/NavigationBar.js';
 import {Jumbotron} from 'react-bootstrap';
 import './components/style.css'
+import {Card} from 'react-bootstrap'
+import Pupcake from './components/pupcake-1.jpeg'
 
 class App extends Component {
   render() {
@@ -21,6 +23,26 @@ class App extends Component {
     <h1>Happy Paws Clubhouse</h1>
     </Jumbotron>
     </div>
+    <div className="card-deck">
+    <Card id="ctp" className="col-sm-6">
+  <Card.Img variant="top" src= {Pupcake} />
+  <Card.Body>
+    <Card.Title id="pawery">The Pawery</Card.Title>
+    <Card.Text>
+    Get some yummy homemade goodies from the shop!
+    </Card.Text>
+  </Card.Body>
+</Card>
+   <Card id="dc" style={{ width: '15rem' }}>
+  <Card.Img variant="top" src= {Pupcake} />
+  <Card.Body>
+    <Card.Title id="pawery">The Pawery</Card.Title>
+    <Card.Text>
+    Get some yummy homemade goodies from the shop!
+    </Card.Text>
+  </Card.Body>
+</Card>
+</div>
       <Layout>
         <Router>
           <Switch>
