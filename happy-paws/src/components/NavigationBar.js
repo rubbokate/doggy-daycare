@@ -4,10 +4,10 @@ import styled from 'styled-components';
 
 const Styles = styled.div`
 .navbar {
-    background-color: #eee8aa;
+    background-color: palegoldenrod;
 }
 .navbar-brand, .navbar-nav, .nav-link {
-    color: #0000ff;
+    color: navy;
     &:hover {
         color: black;
 
