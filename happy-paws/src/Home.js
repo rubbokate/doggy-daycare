@@ -1,9 +1,11 @@
 import React from 'react';
-import Photo from './img/IMG_0015.JPG';
+
+
 
 export const Home = () => (
         <div>
-<img src="./img/IMG_0015.JPG"/>
-<h2>Home Page</h2>
+        
+<h2>Goody Shop</h2>
+<p>Get some yummy homemade goodies from the shop</p>
         </div>
         )
