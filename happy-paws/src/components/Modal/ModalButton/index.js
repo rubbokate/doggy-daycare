@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { LoginButton } from './styles';
-import SignupLoginModal from "../layout/SignupLoginModal";
+import SignupLoginModal from "../SignupLoginModal";
 
 function ModalButton() {
 
     const [show, setShow] = useState(false);
+
+    
 
     return (
         <div>
@@ -13,9 +15,12 @@ function ModalButton() {
                 <span role="img" aria-label="rocket">
 
                 </span>
+                
             </LoginButton>
 
             <SignupLoginModal show={show} setShow={setShow} />
+
+            
         </div>
     )
 }
