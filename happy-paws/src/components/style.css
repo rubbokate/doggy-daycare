@@ -1,5 +1,5 @@
 .jumbotron{
-    background-image: URL("./back-jumbo.png");
+    background-image: URL("./data/icons/back-jumbo.png");
     background-repeat: no-repeat, repeat;
     background-position: center;
     background-size: cover;

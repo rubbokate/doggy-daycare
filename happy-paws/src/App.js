@@ -1,16 +1,16 @@
 import React, {Component} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import {Home} from './Home.js';
-import {Board} from './Board.js';
-import {Daycare} from './Daycare.js';
-import {Train} from './Train.js';
-import {NoMatch} from './NoMatch.js';
-import {Layout} from './components/Layout.js';
-import { NavigationBar } from './components/NavBar/NavigationBar.js';
+import {Home} from './components/Home/Home.js';
+import {Board} from './components/Board.js/Board.js';
+import {Daycare} from './components/Daycare/Daycare.js';
+import {Train} from './components/Train/Train.js';
+import {NoMatch} from './components/NoMatch/NoMatch.js';
+import {Layout} from './components/Layout/Layout.js';
+import { NavigationBar } from './components/Navbar/NavigationBar';
 import {Jumbotron} from 'react-bootstrap';
 import './components/style.css'
 import {Card} from 'react-bootstrap'
-import Pupcake from './components/pupcake-1.jpeg'
+import Pupcake from './components/data/icons/pupcake-1.jpeg'
 
 class App extends Component {
   render() {
