@@ -5,7 +5,7 @@ import {Board} from './components/Board.js/Board.js';
 import {Daycare} from './components/Daycare/Daycare.js';
 import {Train} from './components/Train/Train.js';
 import {NoMatch} from './components/NoMatch/NoMatch.js';
-import {Layout} from './components/Layout/Layout.js';
+import {Layout} from './components/Layouts/Layout.js';
 import { NavigationBar } from './components/Navbar/NavigationBar';
 import {Jumbotron} from 'react-bootstrap';
 import './components/style.css'
