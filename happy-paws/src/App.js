@@ -54,8 +54,8 @@ class App extends Component {
               <Route path="/train" component={Train} />
               <Route component={NoMatch} />
             </Switch>
-            <Footer />
           </Layout>
+          <Footer />
         </Router>
 
 
