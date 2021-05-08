@@ -1,6 +1,6 @@
 import React from 'react';
-import Pupcake from './components/pupcake-1.jpeg'
-import Jersery from './components/jersery-1.jpeg'
+import Pupcake from '../data/icons/pupcake-1.jpeg';
+import Jersery from '../data/icons/jersery-1.jpeg';
 
 
 export const Home = () => (
