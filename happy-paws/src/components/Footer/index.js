@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { StyledFooter } from "./styles";
 import ModalButton from "../ModalButton/";
 
+
 const Footer = () => {
     
     return (
