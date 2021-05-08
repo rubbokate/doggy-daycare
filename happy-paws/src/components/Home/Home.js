@@ -6,6 +6,7 @@ import Jersery from '../data/icons/jersery-1.jpeg';
 export const Home = () => (
         <div>
 <img id="jersery" alt="chihuahua in a blanket" src={Jersery}/>
+<img id="pupcake" alt="pupcake" src={Pupcake}/>
 
 
         </div>
