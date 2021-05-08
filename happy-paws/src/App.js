@@ -6,7 +6,7 @@ import {Daycare} from './Daycare.js';
 import {Train} from './Train.js';
 import {NoMatch} from './NoMatch.js';
 import {Layout} from './components/Layout.js';
-import { NavigationBar } from './components/NavigationBar.js';
+import { NavigationBar } from './components/NavBar/NavigationBar.js';
 import {Jumbotron} from 'react-bootstrap';
 import './components/style.css'
 import {Card} from 'react-bootstrap'
