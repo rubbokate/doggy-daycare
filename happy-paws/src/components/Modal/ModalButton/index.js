@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import { LoginButton, SubscriptionCaption } from './styles';
-import SignupLoginModal from "../layout/SignupLoginModal";
+import SignupLoginModal from "../SignupLoginModal";
 
 
 function ModalButton() {
