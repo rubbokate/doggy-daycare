@@ -30,6 +30,9 @@ export const LoginButton = styled(Button)`
         box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12),
             0 11px 15px -7px rgba(0, 0, 0, 0.2);
     }
+    border: 1px solid;
+border-radius: 3px;
+box-shadow: 10px 10px 5px grey;
 `;
 
 export const ResponsiveHeader2 = styled("h2")`
@@ -63,4 +66,13 @@ export const FullRow = styled(Row)`
 export const VerticalCenterWrapper = styled("div")`
     height: 100% !important;
     display: flex;
+`;
+
+export const SubscriptionCaption = styled("div")`
+background-color: red;
+color: white;
+border: 1px solid;
+border-radius: 3px;
+box-shadow: 10px 10px 5px grey;
+
 `;

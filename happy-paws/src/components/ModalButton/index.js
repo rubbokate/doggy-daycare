@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { LoginButton } from './styles';
+import { LoginButton, SubscriptionCaption } from './styles';
 import SignupLoginModal from "../layout/SignupLoginModal";
 
 function ModalButton() {
@@ -8,6 +8,15 @@ function ModalButton() {
 
     return (
         <div>
+       <SubscriptionCaption>
+
+       Subscribe For Daily Updates
+
+       </SubscriptionCaption>
+         
+        
+       
+       
             <LoginButton size="lg" onClick={() => setShow(true)}>
                 SignUp/Login{" "}
                 <span role="img" aria-label="rocket">
