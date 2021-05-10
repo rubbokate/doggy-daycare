@@ -13,6 +13,7 @@ import { Card } from 'react-bootstrap'
 import Pupcake from './components/data/icons/pupcake-1.jpeg';
 import Footer from './components/Modal/Footer';
 
+
 class App extends Component {
   render() {
     return (
