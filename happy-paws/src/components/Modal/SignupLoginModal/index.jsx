@@ -99,8 +99,11 @@ const SignUpLoginForm = () => {
 };
 
 const SignupLoginModal = (props) => {
+
+
+ 
     return (
-        <Modal show={props.show} onHide={() => props.setShow(false)}>
+        <Modal show={props.show} onHide={() => props.setShow(false)} animation={false}>
             <Modal.Header closeButton>
                 <Modal.Title>Sign up / Login</Modal.Title>
             </Modal.Header>
@@ -119,6 +122,8 @@ const SignupLoginModal = (props) => {
         </Modal>
     );
 };
+
+
 
 export default SignupLoginModal;
 
