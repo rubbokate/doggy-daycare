@@ -26,6 +26,7 @@ class App extends Component {
           </Jumbotron>
         </div>
         <div className="card-deck">
+        <div class="row mb-8">
           <Card id="ctp" className="col-sm-6">
             <Card.Img variant="top" src={Pupcake} />
             <Card.Body>
@@ -35,15 +36,18 @@ class App extends Component {
     </Card.Text>
             </Card.Body>
           </Card>
-          <Card id="dc" style={{ width: '15rem' }}>
+          </div>
+          <div class="row mb-8">
+          <Card id="dc" className="col-sm-6">
             <Card.Img variant="top" src={Pupcake} />
             <Card.Body>
-              <Card.Title id="pawery">The Pawery</Card.Title>
+              <Card.Title id="daycard">Daycare</Card.Title>
               <Card.Text>
-                Get some yummy homemade goodies from the shop!
+                A fun place for your dog to go while you are away!
     </Card.Text>
             </Card.Body>
           </Card>
+        </div>
         </div>
 
         <Router>
