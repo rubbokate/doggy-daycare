@@ -9,9 +9,10 @@ import { Layout } from './components/Layouts/Layout.js';
 import { NavigationBar } from './components/Navbar/NavigationBar';
 import { Jumbotron } from 'react-bootstrap';
 import './components/style.css'
-import { Card } from 'react-bootstrap'
-import Pupcake from './components/data/icons/pupcake-1.jpeg';
+// import { Card } from 'react-bootstrap'
+// import Pupcake from './components/data/icons/pupcake-1.jpeg';
 import Footer from './components/Modal/Footer';
+import Calendar from './components/Calendar';
 
 
 class App extends Component {
@@ -25,6 +26,7 @@ class App extends Component {
             <h1>Happy Paws Clubhouse</h1>
           </Jumbotron>
         </div>
+{/*         
         <div className="card-deck">
         <div class="row mb-8">
           <Card id="ctp" className="col-sm-6">
@@ -48,7 +50,7 @@ class App extends Component {
             </Card.Body>
           </Card>
         </div>
-        </div>
+        </div> */}
 
         <Router>
           <Layout>
@@ -57,6 +59,7 @@ class App extends Component {
               <Route path="/board" component={Board} />
               <Route path="/daycare" component={Daycare} />
               <Route path="/train" component={Train} />
+              <Route path="/book" component={Calendar} />
               <Route component={NoMatch} />
             </Switch>
           </Layout>
