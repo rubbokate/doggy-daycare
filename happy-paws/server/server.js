@@ -7,7 +7,7 @@ const passport = require("./passport/setup");
 const auth = require("./routes/auth");
 
 const app = express();
-const PORT = 5000;
+const PORT = 3003;
 const MONGO_URI = "mongodb://localhost:27017/signuplogin";
 
 mongoose
@@ -35,7 +35,7 @@ app.use(passport.session());
 
 // Routes
 app.use("/api/auth", auth);
-app.get("/", (req, res) => res.send("Good monring sunshine!"));
+app.get("/", (req, res) => res.send("Good morning sunshine!"));
 
 app.listen(PORT, () => console.log(`Backend listening on port ${PORT}!`));
 
