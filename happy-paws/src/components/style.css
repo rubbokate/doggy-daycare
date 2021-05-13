@@ -29,12 +29,13 @@ h2, p{
     margin-right: auto;
 }
 
-#jersery {
+#jersery2 {
     padding-top: 25px;
     padding-left: 50px;
+    display: inline;
 }
 
-#pawery{
+#pawery, #daycard {
     color: navy;
     text-align: center;
 }
@@ -43,5 +44,25 @@ h2, p{
     display: block;
     margin-right: auto;
     width: 100%;
+    margin-left: auto;
+    
 }
+
+#dc{
+    display: block;
+    margin-right: auto;
+    width: 100%;
+    margin-left: auto; 
+}
+
+#bookingtext {
+    white-space: nowrap;
+}
+
+#texts{
+    display: inline;
+    white-space: nowrap;
+}
+
+
 
