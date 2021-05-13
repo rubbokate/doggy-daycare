@@ -7,7 +7,7 @@ const passport = require("./passport/setup");
 const auth = require("./routes/auth");
 
 const app = express();
-const PORT = 5000;
+const PORT = 3003;
 const MONGO_URI = "mongodb://localhost:27017/signuplogin";
 
 mongoose
