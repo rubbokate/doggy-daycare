@@ -1,17 +1,46 @@
 import React from 'react';
 
-const styles = {
-        backgroundColor: 'red'
+const mainContainer = {
+        backgroundColor: "white",
+        borderRadius: "25px",
+        border: "solid",
+        boxShadow: "10px 10px 5px black",
+
+
 }
 
-const styles2 = {
-        backgroundColor: 'white'
+const bottomContainer = {
+        backgroundColor: "white",
+        borderRadius: "25px",
+        border: "solid",
+        boxShadow: "10px 10px 5px black",
+
+}
+
+const buttonDiv = {
+        borderRadius: "25px",
+        border: "solid",
+        boxShadow: "10px 10px 5px black"
+
+}
+
+const changeButtonBackgroundColor = (e) => {
+
+        if (e.target.style.background === "green") {
+
+                return e.target.style.background = "white"
+        }
+        else {
+                return e.target.style.background = "green"
+        }
+        
 }
 
 export const Board = () => (
         <div>
+        <br></br>
 
-                <div id="main-container" style={styles}>
+                <div id="main-container" style={mainContainer}>
 
                         <h1>Dog Boarding</h1>
                         <p>
@@ -28,16 +57,16 @@ export const Board = () => (
                                 comes from a line in section 1.10.32.
                         </p>
                         <div id="button-div">
-                        <button>
-                                Book your dog's stay today!
+                                <button style={buttonDiv} onMouseEnter={changeButtonBackgroundColor} onMouseLeave={changeButtonBackgroundColor}>
+                                        Book your dog's stay today!
                         </button>
                         </div>
-
-                        
-
+                        <hr></hr>
                 </div>
 
-                <div id="bottom-info" style={styles2}>
+                <br></br>
+
+                <div id="bottom-info" style={bottomContainer}>
                         <h2>Hours</h2>
                         <hr></hr>
                         <p>Monday - Friday: 7am - 7pm</p>
@@ -51,10 +80,12 @@ export const Board = () => (
                         <hr></hr>
                         <p>phone: (586) 555-5555)</p>
                         <p>email: happypaws@happymail.com</p>
-                        <button>Make a reservation</button>
+                        <button style={buttonDiv} onMouseEnter={changeButtonBackgroundColor} onMouseLeave={changeButtonBackgroundColor}>Make a reservation</button>
+<hr></hr>
 
+                </div>
 
-                        </div>
+                <br></br>
 
 
         </div>

@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Home } from './components/Home/Home.js';
 import { Board } from './components/Board.js/Board.js';
 import { Daycare } from './components/Daycare/Daycare.js';
-import { Train } from './components/Train/Train.js';
+import { Reservation } from './components/Reservation';
 import { NoMatch } from './components/NoMatch/NoMatch.js';
 import { Layout } from './components/Layouts/Layout.js';
 import { NavigationBar } from './components/Navbar/NavigationBar';
@@ -52,7 +52,7 @@ class App extends Component {
               <Route exact path="/" component={Home} />
               <Route path="/board" component={Board} />
               <Route path="/daycare" component={Daycare} />
-              <Route path="/train" component={Train} />
+              <Route path="/Reservation" component={Reservation} />
               <Route component={NoMatch} />
             </Switch>
           </Layout>
