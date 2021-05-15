@@ -1,76 +1,67 @@
 import React from 'react';
-// import Pupcake from '../data/icons/pupcake-1.jpeg';
-// import Jersery from '../data/icons/jersery-1.jpeg';
-import bigDog from '../data/icons/bigDog.jpeg';
-
-const mainContainer = {
-        backgroundColor: "white",
-        borderRadius: "25px",
-        border: "solid",
-        boxShadow: "10px 10px 5px black",
+ import Pupcake from '../data/icons/pupcake-1.jpeg';
+ import Jersery from '../data/icons/jersery-1.jpeg';
+//import bigDog from '../data/icons/bigDog.jpeg';
+import {Card} from 'react-bootstrap'
+import { Jumbotron } from 'react-bootstrap';
+import '../style.css'
 
 
-}
-
-const huahuaStyle = {
-
-        minWidth: "100%",
-        backgroundColor: "white",
-        borderRadius: "25px",
-        border: "solid",
-        boxShadow: "10px 10px 5px black",
-}
-
-const buttonDiv = {
-        borderRadius: "25px",
-        border: "solid",
-        boxShadow: "10px 10px 5px black",
-
-}
-
-const changeButtonBackgroundColor = (e) => {
-
-        if (e.target.style.background === "green") {
-
-                return e.target.style.background = "white"
-        }
-        else {
-                return e.target.style.background = "green"
-        }
-        
-}
 
 export const Home = () => (
         <div>
-                {/* <div style={huahuaStyle}>
-        <img id="jersery" alt="chihuahua in a blanket" src={Jersery}/>
-        </div> */}
-                {/* <img id="pupcake" alt="pupcake" src={Pupcake}/> */}
-
-                <br></br>
-
-                <div style={huahuaStyle}>
-                        <img id="bigDog" alt="big dog" src={bigDog} style={huahuaStyle} />
+                <div className="container">
+          <Jumbotron fluid>
+            <h1>Happy Paws Clubhouse</h1>
+          </Jumbotron>
+        </div>
+        <br></br>
+        <div className="card-deck">
+        <div class="row mb-8">
+          <Card id="ctp" className="col-sm-8">
+            <Card.Img variant="top" src={Pupcake} />
+            <Card.Body>
+              <Card.Title id="pawery">The Pawery</Card.Title>
+              <Card.Text>
+                Get some yummy homemade goodies from the shop!
+    </Card.Text>
+            </Card.Body>
+          </Card>
+          </div>
+          <div class="row mb-8">
+          <Card id="dc" className="col-sm-8">
+            <Card.Img variant="top" src={Pupcake} />
+            <Card.Body>
+              <Card.Title id="daycard">Daycare</Card.Title>
+              <Card.Text>
+                A fun place for your dog to go while you are away!
+    </Card.Text>
+            </Card.Body>
+          </Card>
+        </div>
+        </div>
+        
+<br></br>
+        
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="card">
+                    <div class="row card-body">
+                       <div class="col-sm-6">
+                          <h1 class="card-title">Need to book your pets stay with us?</h1>
+                           <a href="../Reservation/index.js" class="btn btn-danger">Book Now!</a>
+                        </div>
+                        <img class="col-sm-6" src={Jersery} alt="chihuahua"/>
+                    </div>
                 </div>
-                <br></br>
+            </div>
 
-                <div style={mainContainer}>
+        </div>
 
-                        <h1>Welcome to Happy Happy Paw Paw</h1>
-
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
-
-                </div>
+        
 
                 <br></br>
 
-                <div id="button-div" >
-
-                <button style={buttonDiv} onMouseEnter={changeButtonBackgroundColor} onMouseLeave={changeButtonBackgroundColor}>Book your dog's stay today!</button>
-
-                </div>
-
-                <br></br>
 
 
         </div>
