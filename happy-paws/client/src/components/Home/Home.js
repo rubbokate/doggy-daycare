@@ -5,6 +5,7 @@ import React from 'react';
 import {Card} from 'react-bootstrap'
 import { Jumbotron } from 'react-bootstrap';
 import '../style.css'
+import {CardDeck} from 'react-bootstrap'
 
 
 
@@ -16,9 +17,9 @@ export const Home = () => (
           </Jumbotron>
         </div>
         <br></br>
-        <div className="card-deck">
+        <CardDeck style={{display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
         <div class="row mb-8">
-          <Card id="ctp" className="col-sm-8">
+          <Card style={{flex: 1}} id="ctp" className="col-sm-6">
             <Card.Img variant="top" src={Pupcake} />
             <Card.Body>
               <Card.Title id="pawery">The Pawery</Card.Title>
@@ -29,7 +30,7 @@ export const Home = () => (
           </Card>
           </div>
           <div class="row mb-8">
-          <Card id="dc" className="col-sm-8">
+          <Card style={{flex: 1}} id="dc" className="col-sm-6">
             <Card.Img variant="top" src={Pupcake} />
             <Card.Body>
               <Card.Title id="daycard">Daycare</Card.Title>
@@ -39,8 +40,7 @@ export const Home = () => (
             </Card.Body>
           </Card>
         </div>
-        </div>
-        
+        </CardDeck>
 <br></br>
         
         <div class="row">
@@ -55,7 +55,7 @@ export const Home = () => (
                     </div>
                 </div>
             </div>
-
+        
         </div>
 
         
