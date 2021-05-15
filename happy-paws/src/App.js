@@ -9,8 +9,6 @@ import { Layout } from './components/Layouts/Layout.js';
 import { NavigationBar } from './components/Navbar/NavigationBar';
 import { Jumbotron } from 'react-bootstrap';
 import './components/style.css'
-// import { Card } from 'react-bootstrap'
-// import Pupcake from './components/data/icons/pupcake-1.jpeg';
 import Footer from './components/Modal/Footer';
 import Calendar from './components/Calendar';
 
