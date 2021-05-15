@@ -37,7 +37,7 @@ app.use(passport.session());
 // Routes
 app.use("/api/auth", auth);
 app.get("/", (req, res) => res.send("Good morning sunshine!"));
-
+app.use("/api/calendar", require("./controllers/Calendarcontroller"))
 app.listen(PORT, () => console.log(`Backend listening on port ${PORT}!`));
 
 
