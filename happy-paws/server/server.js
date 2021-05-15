@@ -4,14 +4,14 @@ const MongoStore = require("connect-mongo")(session);
 const mongoose = require("mongoose");
 
 const passport = require("./passport/setup");
-const auth = require("./routes/auth");
+const auth = require("./routes/api/auth");
 
 const app = express();
-const PORT = 3003;
+const PORT = 3001;
 const MONGO_URI = "mongodb://localhost:27017/signuplogin";
 
 mongoose
-    .connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+    .connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
     .then(console.log(`MongoDB connected ${MONGO_URI}`))
     .catch(err => console.log(err));
 
