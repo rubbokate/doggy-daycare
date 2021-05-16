@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 // pull in axios
 // import axios from 'axios';
 import API from "../../utils/API";
@@ -17,6 +17,8 @@ export function Reservation() {
         //------------------------------------------------------
         // const [books, setBooks] = useState([])
         const [formObject, setFormObject] = useState({})
+
+        let AllBookingData = [];// not a state controled variable so it does NOT cause a loop when used in UseEffect. 
 
         const handleSubmit = (e) => {
                 e.preventDefault();
@@ -50,12 +52,31 @@ export function Reservation() {
                 setFormObject({...formObject, [name]: value})
               };
 
+        // Function dump date into calendar.
+
         function pullAllData() {
                 //API. Get all bookings
-                
+                API.getBookings()
+                .then ((res) => {
+                        console.log(res.data);
+                        let temp = res.data;
+                        AllBookingData.push(temp);
+                        console.log("AllBookingData: ");
+                        // let tempLenght = AllBookingData.length;
+                        console.log(AllBookingData); 
 
+                })
+                .catch((error) => {console.log(error)});
+
+                //dump data into calendare
+                // AllBookingData = [];// put all booking data into this variable.
+                // console.log("AllBookingData: ");
+                // console.log(AllBookingData);
         }
 
+        useEffect(() => {
+                pullAllData();
+        });
 
         return (
                 <div>
@@ -81,7 +102,7 @@ export function Reservation() {
                                 {/* <div>{currentDate}</div> */}
                         </form>
 
-                        <button onClick={pullAllData}/>
+                        <button onClick={pullAllData}>pull all data </button>
 
 
                 </div>
