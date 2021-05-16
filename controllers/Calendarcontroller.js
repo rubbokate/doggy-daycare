@@ -2,13 +2,14 @@ const router = require("express").Router();
 const Event = require("../models/event"); 
 const moment = require("moment");
 
-router.post("/create-event", async (req, res) => {
+router.post("/create-event", async (req, res) => {// this goes inside a route
   const event = Event(req.body);
   await event.save();
   res.sendStatus(201);
 });
+
 router.get("/get-events", async (req, res) => {
-  const events = await Event.find({
+  const events = await Event.find({// this goes inside a controller
     start: { $gte: moment(req.query.start).toDate() },
     end: { $lte: moment(req.querey.end).toDate() },
   }); 
