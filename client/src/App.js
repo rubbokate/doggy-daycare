@@ -10,12 +10,12 @@ import { NavigationBar } from './components/Navbar/NavigationBar';
 import './components/style.css'
 import Footer from './components/Modal/Footer';
 
-
+// why are we using a react fragment??
 class App extends Component {
   render() {
     return (
-
-      <React.Fragment>
+      <div>
+      {/*<React.Fragment>*/}
         <NavigationBar />
         <Router>
           <Layout>
@@ -29,14 +29,11 @@ class App extends Component {
           </Layout>
           <Footer />
         </Router>
-
-
-      </React.Fragment>
+      {/*</React.Fragment>*/}
+      </div>
 
     )
   }
 }
-
-
 
 export default App;
