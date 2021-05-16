@@ -50,6 +50,12 @@ export function Reservation() {
                 setFormObject({...formObject, [name]: value})
               };
 
+        function pullAllData() {
+                //API. Get all bookings
+                
+
+        }
+
 
         return (
                 <div>
@@ -74,6 +80,8 @@ export function Reservation() {
                                 <input type="submit" value="Save Booking SUBMIT BUTTON" />
                                 {/* <div>{currentDate}</div> */}
                         </form>
+
+                        <button onClick={pullAllData}/>
 
 
                 </div>
