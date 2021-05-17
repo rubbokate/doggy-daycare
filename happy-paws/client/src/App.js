@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Home } from './components/Home/Home.js';
 import { Board } from './components/Board.js/Board.js';
 import { Daycare } from './components/Daycare/Daycare.js';
-import { Reservation } from './components/Reservation';
+//import { Reservation } from './components/Reservation/Calendar';
 import { NoMatch } from './components/NoMatch/NoMatch.js';
 import { Layout } from './components/Layouts/Layout.js';
 import { NavigationBar } from './components/Navbar/NavigationBar';
@@ -13,6 +13,7 @@ import { Card } from 'react-bootstrap'
 import Pupcake from './components/data/icons/pupcake-1.jpeg';
 import Footer from './components/Modal/Footer';
 
+import Calendar from './components/Reservation/Calendar'; 
 
 class App extends Component {
   render() {
@@ -52,7 +53,7 @@ class App extends Component {
               <Route exact path="/" component={Home} />
               <Route path="/board" component={Board} />
               <Route path="/daycare" component={Daycare} />
-              <Route path="/Reservation" component={Reservation} />
+              <Route path="/Reservation" component={Calendar} />
               <Route component={NoMatch} />
             </Switch>
           </Layout>
