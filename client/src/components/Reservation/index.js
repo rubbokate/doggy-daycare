@@ -93,11 +93,7 @@ export function Reservation() {
 
   return (
     <div>
-      <div className="container">
-        <Jumbotron fluid>
-          <h1>Happy Paws Clubhouse</h1>
-        </Jumbotron>
-      </div>
+    
       <form onSubmit={handleSubmit}>
         <h1>Request Your Stay Today!</h1>
         <label className="FormLabel">Your Name </label>
