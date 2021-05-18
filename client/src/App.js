@@ -10,8 +10,7 @@ import { NavigationBar } from './components/Navbar/NavigationBar';
 import './components/style.css'
 import Footer from './components/Modal/Footer';
 import { GlowStyle } from './components/Daycare/styles';
-// import backJumbo from "./components/data/icons/back-jumbo.png";
-// , backgroundImage: `url(${backJumbo})`,
+import {Jumbotron} from "react-bootstrap";
 
 // why are we using a react fragment??
 class App extends Component {
@@ -22,9 +21,15 @@ class App extends Component {
 
         <NavigationBar />
 
-        <div className="row" style={{ minWidth: "100%" }}>
+        <div className="container">
+      <Jumbotron fluid>
+        <h1>Happy Paws Clubhouse</h1>
+      </Jumbotron>
+    </div>
 
-          <div style={{maxWidth: "10%", marginLeft: "5%", marginRight: "5%", marginTop: "25%", marginBottom: "25%", float: "left"}}>
+        <div className="row" style={{ minWidth: "100%", display: "inline-flex" }}>
+
+          <div style={{maxWidth: "10%", marginLeft: "auto", marginRight: "auto", marginTop: "25%", marginBottom: "25%", float: "left"}}>
 
             <GlowStyle />
 
@@ -53,7 +58,7 @@ class App extends Component {
 
           </div>
 
-          <div style={{maxWidth: "10%", marginLeft: "5%", marginRight: "5%", marginTop: "25%", marginBottom: "25%", float: "right"}}>
+          <div style={{maxWidth: "10%", marginLeft: "auto", marginRight: "auto", marginTop: "25%", marginBottom: "25%", float: "right"}}>
 
             <GlowStyle />
 

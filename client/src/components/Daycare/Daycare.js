@@ -7,7 +7,7 @@ import {H1} from './styles';
 // import {HighLighted} from "./divStyle";
 
 
-import { Jumbotron} from 'react-bootstrap';
+// import { Jumbotron} from 'react-bootstrap';
 import backJumbo from "../data/icons/back-jumbo.png";
 // import dog1 from "../data/icons/dog1.jpg";
 import "../style.css";
@@ -55,11 +55,11 @@ export const Daycare = () => (
 
         <div>
 
-<div className="container">
+{/* <div className="container">
       <Jumbotron fluid>
         <h1>Happy Paws Clubhouse</h1>
       </Jumbotron>
-    </div>
+    </div> */}
 
                 <br></br>
 

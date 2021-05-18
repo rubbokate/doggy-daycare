@@ -1,13 +1,17 @@
 import React, { useState, useEffect } from "react";
 import API from "../../utils/API";
-import { Jumbotron } from "react-bootstrap";
-import "./style.css";
+
+// import cors from "cors";
+// import {Jumbotron} from "react-bootstrap";
+
+import './style.css'
 
 let dateformat = require("dateformat");
 let now = new Date();
 let tomorrow = now.setDate(now.getDate() + 1);
 
 export function Reservation() {
+
         
   const [StartDate, setStartDate] = useState("");
   const [StartDateMax, setStartDateMax] = useState("");
@@ -198,4 +202,5 @@ export function Reservation() {
       </div>
     </div>
   );
+
 }
