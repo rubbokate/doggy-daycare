@@ -1,0 +1,84 @@
+h1{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-align: center; */
+    padding: 5px;
+}
+
+form {
+  /* flex: auto; */
+  /* margin: 100px auto;
+  width: 1000px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  border-radius: 10px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; */
+
+    /* width: 500px; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    padding: 5%;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.FormLabel {
+  /* flex: auto; */
+  /* float: left;
+   */
+   background: linear-gradient(
+    90deg,
+    rgb(39, 176, 255) 0%,
+    rgb(0, 232, 236) 100%
+  );
+  border-radius: 5px;
+  /* position: relative; */
+  width: 200px;
+  /* justify-content: center; */
+  /* align-items: center; */
+  text-align: center;
+}
+
+.FormInput {
+  /* flex: auto; */
+  /* float: right; */
+  width: 200px;
+  border-radius: 10px;
+  /* position: relative; */
+  /* background: linear-gradient(90deg, rgb(65, 61, 61) 0%, rgb(182, 178, 178) 100%); */
+  /* background:rgb(0, 232, 236); */
+}
+
+.ReturnRequest{
+    /* visibility: hidden; */
+    /* display: none; */
+    padding: 5%;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: cornsilk;
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    
+    /* border-style: solid; */
+    /* border-color: black; */
+    /* border-radius: 10px; */
+    /* background-color: cornsilk; */
+}
