@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 // import axios from 'axios';
 import API from "../../utils/API";
 // import cors from "cors";
+import {Jumbotron} from "react-bootstrap";
+import "../style.css"
 
 export function Reservation() {
         // const [name, setName] = useState("");
@@ -34,7 +36,14 @@ export function Reservation() {
                 console.log(formObject);// show object to be sent to DB in log
                 // db.create(DataObject);  this is the axios or what ever we need
                 API.saveBooking(formObject)
-                .then ((res) => {console.log("Then: "+ res.data)})
+                .then ((res) => {
+                        console.log(res.data);
+                        let data = res.data;
+                        let allBookings = [];
+                        allBookings.push(data);
+                        console.log(allBookings);
+
+                })
                 .catch((error) => {console.log(error)});
 
                 // axios.post('http://localhost:3001/bookings/create',  DataObject)
@@ -52,6 +61,36 @@ export function Reservation() {
 
         function pullAllData() {
                 //API. Get all bookings
+
+                // API.getBookings()
+                // .then ((res) => {
+                //         console.log(res.data);
+                //         let temp = res.data;
+                //         AllBookingData.push(temp);
+                //         console.log("AllBookingData: ");
+                //         console.log(AllBookingData); 
+                // })
+                // .catch((error) => {console.log(error)});
+
+                API.getBookings(formObject)
+                .then ((res) => {
+                        console.log(res.data);
+                        let data = res.data;
+                        let allBookings = [];
+                        allBookings.push(data);
+                        console.log(allBookings);
+                        allBookings.map((results) => {
+                                for (let result in results) {
+                                        result = results[0].rooms;
+                                        console.log(result)
+
+                                }
+                                return results;
+                        })
+
+                })
+                .catch((error) => {console.log(error)});
+
                 
 
         }
@@ -59,6 +98,12 @@ export function Reservation() {
 
         return (
                 <div>
+
+<div className="container">
+      <Jumbotron fluid>
+        <h1>Happy Paws Clubhouse</h1>
+      </Jumbotron>
+    </div>
                         <form onSubmit={handleSubmit}>
                                 <label className='NameFormLabel'>Your Name </label>
                                 <input type="test" id="UserNameinput" name="name" required onChange={handleInputChange} /><br />
@@ -81,7 +126,7 @@ export function Reservation() {
                                 {/* <div>{currentDate}</div> */}
                         </form>
 
-                        <button onClick={pullAllData}/>
+                        <button onClick={pullAllData}>Reload</button>
 
 
                 </div>

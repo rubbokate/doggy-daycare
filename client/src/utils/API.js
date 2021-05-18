@@ -17,5 +17,17 @@ export default {
   // Saves a booking to the database
   saveBooking: function (bookingData) {
     return axios.post("/api/booking", bookingData);
+  },
+
+  saveUser: function (userData) {
+    return axios.post("/api/register_login", userData);
+  },
+
+  getUsers: function () {
+    return axios.get("/api/register_login");
+  },
+
+  getUser: function (id) {
+    return axios.get("/api/register_login/" + id);
   }
 };

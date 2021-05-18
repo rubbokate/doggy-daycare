@@ -1,24 +1,17 @@
-import React from "react";
+
+import React from 'react';
+import MailchimpSubscribe from "react-mailchimp-subscribe"
 
 
-function Modal() {
-    return (
-        <div>
-            <form action="/login" method="post">
-    <div>
-        <label>Username:</label>
-        <input type="text" name="username"/>
-    </div>
-    <div>
-        <label>Password:</label>
-        <input type="password" name="password"/>
-    </div>
-    <div>
-        <input type="submit" value="Log In"/>
-    </div>
-</form>
+function Login(props) {
+    return(
+        <div style={{color: "white"}}>
+
+Subscribe To Newsletter Here
+<MailchimpSubscribe url={process.env.REACT_APP_MAILCHIMP_URL} />
+
         </div>
-    ) 
+    )
 }
 
-export default Modal;
+export default Login;

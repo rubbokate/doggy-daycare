@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Modal, Form, Col, Row } from "react-bootstrap";
-import axios from "axios";
-import DelegatedAuthList from "../DelegatedAuthList";
+import API from "../../../utils/API";
+// import DelegatedAuthList from "../DelegatedAuthList";
 
 import {
     PaddedContainer,
@@ -25,8 +25,7 @@ const SignUpLoginForm = () => {
             password
         };
 
-        axios
-            .post("/api/auth/register_login", userData)
+        API.saveUser(userData)
             .then((res) => {
                 console.log(res);
             })
@@ -34,6 +33,8 @@ const SignUpLoginForm = () => {
                 console.log(err);
                 console.log(err.response);
             });
+
+
     };
 
     return (
@@ -50,6 +51,7 @@ const SignUpLoginForm = () => {
                             onChange={(e) => {
                                 setEmail(e.target.value);
                                 console.log(email);
+                                console.log(e);
                             }}
                             required
                         />
@@ -92,7 +94,7 @@ const SignUpLoginForm = () => {
                 </Row>
             </Form.Group>
             <VerticalCenterWrapper>
-                <SubmitButton type="submit">Submit</SubmitButton>
+                <SubmitButton type="submit" onClick={() => console.log('hey')}>Submit</SubmitButton>
             </VerticalCenterWrapper>
         </Form>
     );
@@ -112,12 +114,12 @@ const SignupLoginModal = (props) => {
                 <br />
                 <SignUpLoginForm />
                 <Row style={{ borderBottom: "1px solid #dee2e6" }} />
-                <ResponsiveHeader4>
+                {/* <ResponsiveHeader4>
                     Or with your favorite third party provider: (Facebook, Google, Amazon,
                     Github logos will go here)
-        </ResponsiveHeader4>
+        </ResponsiveHeader4> */}
                 <br />
-                <DelegatedAuthList />
+                {/* <DelegatedAuthList /> */}
             </PaddedContainer>
         </Modal>
     );
