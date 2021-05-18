@@ -3,6 +3,6 @@ This is a React based app designed to help users book boarding and training date
 
 ## Deployment 
 1. Clone this repo 
-2. Install the dependencie 
+2. Install the dependencies
 3. On the server side run npm start in your terminal 
 

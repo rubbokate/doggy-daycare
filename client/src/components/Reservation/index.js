@@ -4,11 +4,14 @@ import React, { useState, useEffect } from 'react';
 // import axios from 'axios';
 import API from "../../utils/API";
 // import cors from "cors";
+
 import './style.css'
 
 let dateformat = require("dateformat");
 let now = new Date();
 let tomorrow = now.setDate(now.getDate() + 1);
+
+import {Jumbotron} from "react-bootstrap";
 
 
 
@@ -78,6 +81,7 @@ export function Reservation() {
                 // console.log("Here is your form Object: ");
                 // console.log(formObject);// show object to be sent to DB in log
                 // db.create(DataObject);  this is the axios or what ever we need
+
                 API.saveBooking(DataObject)//formObject
                         .then((res) => {
                                 setIsVisible('visible');
@@ -91,6 +95,7 @@ export function Reservation() {
                                 setReturnEndDate("Check out: " + res.data.endDate.substring(0, 10));
                         })
                         .catch((error) => { console.log(error) });
+
 
                 // axios.post('http://localhost:3001/bookings/create',  DataObject)
                 // .then ((res) => {
@@ -179,6 +184,7 @@ export function Reservation() {
 
         function pullAllData() {
                 //API. Get all bookings
+
                 API.getBookings()
                         .then((res) => {
                                 // console.log(res.data);
@@ -212,7 +218,12 @@ export function Reservation() {
 
         return (
                 <div>
-                        {/* <h1>Request Your Stay Today!</h1> */}
+
+<div className="container">
+      <Jumbotron fluid>
+        <h1>Happy Paws Clubhouse</h1>
+      </Jumbotron>
+    </div>
                         <form onSubmit={handleSubmit}>
                         <h1>Request Your Stay Today!</h1>
                                 <label className='FormLabel'>Your Name </label>
@@ -266,6 +277,7 @@ export function Reservation() {
                                 <div>{ReturnUserRooms}</div>
                                 <div>{ReturnStartDate}</div>
                                 <div>{ReturnEndDate}</div>
+
 
                         </div>
 
