@@ -22,7 +22,6 @@ mongoose
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cors());
-// app.use(routes);
 
 // Express Session
 app.use(
@@ -42,8 +41,6 @@ app.use(passport.session());
 // Routes
 // app.use("/api/auth", auth);
 app.use(routes);
-// app.use()
-app.get("/", (req, res) => res.send("Good morning sunshine!"));
 
 app.use("/api/calendar", require("./controllers/Calendarcontroller"));
 

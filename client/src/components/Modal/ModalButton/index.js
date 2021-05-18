@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import MyComponent from "../Ref";
 import { LoginButton, SubscriptionCaption } from './styles';
 import SignupLoginModal from "../SignupLoginModal";
 import './index.css'
@@ -14,7 +13,7 @@ function ModalButton(props) {
     return (
         <div>
             <SubscriptionCaption>
-                Subscribe For Daily Updates
+                SignUp For Camera Access
        </SubscriptionCaption>
 
 
