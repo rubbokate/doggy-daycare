@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 // import axios from 'axios';
 import API from "../../utils/API";
 // import cors from "cors";
+import {Jumbotron} from "react-bootstrap";
 
 import './style.css'
 
@@ -11,7 +12,7 @@ let dateformat = require("dateformat");
 let now = new Date();
 let tomorrow = now.setDate(now.getDate() + 1);
 
-import {Jumbotron} from "react-bootstrap";
+
 
 
 
