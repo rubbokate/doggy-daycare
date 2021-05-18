@@ -1,5 +1,5 @@
 import React from 'react';
-import { Jumbotron } from 'react-bootstrap';
+// import { Jumbotron } from 'react-bootstrap';
 // import bigDog from "../../components/data/icons/bigDog.jpeg";
 import backJumbo from "../../components/data/icons/back-jumbo.png";
 import { H1 } from "../Daycare/styles";
@@ -57,11 +57,11 @@ const changeButtonBackgroundColor = (e) => {
 export const Board = () => (
         <div>
 
-                <div className="container">
+                {/* <div className="container">
                         <Jumbotron fluid>
                                 <h1>Happy Paws Clubhouse</h1>
                         </Jumbotron>
-                </div>
+                </div> */}
                 <br></br>
 
                 <div id="main-container" style={mainContainer}>

@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 // import axios from 'axios';
 import API from "../../utils/API";
 // import cors from "cors";
-import {Jumbotron} from "react-bootstrap";
+// import {Jumbotron} from "react-bootstrap";
 
 import './style.css'
 
@@ -36,12 +36,12 @@ export function Reservation() {
         const [ReturnUserPets, setReturnUserPets] = useState('');
         const [ReturnUserRooms, setReturnUserRooms] = useState('');
 
-        const [IsVisible, setIsVisible] = useState('');
+        // const [IsVisible, setIsVisible] = useState('');
         
 
-        const divStyle = {
-                visibility: IsVisible
-        };
+        // const divStyle = {
+        //         visibility: IsVisible
+        // };
 
         let StartDateMin = dateformat(tomorrow, "isoDate");
         // let today = dateformat(now, "isoDate");
@@ -85,7 +85,7 @@ export function Reservation() {
 
                 API.saveBooking(DataObject)//formObject
                         .then((res) => {
-                                setIsVisible('visible');
+                                // setIsVisible('visible');
                                 console.log(res.data);
                                 setRequestConfirmation("Your Request is Successfull!");
                                 setReturnUserName("Your Name: " + res.data.name);
@@ -98,14 +98,9 @@ export function Reservation() {
                         .catch((error) => { console.log(error) });
 
 
-                // axios.post('http://localhost:3001/bookings/create',  DataObject)
-                // .then ((res) => {
-                //         console.log(res.data)
-                //     }).catch((error) => {
-                //         console.log(error)
-                //     });
+             
 
-                console.log("StartDate: " + StartDate);
+               
         }
 
         // function handleInputChange(event) {
@@ -218,14 +213,16 @@ export function Reservation() {
         });
 
         return (
-                <div>
+                <div  style={{minWidth: "100vw"}}>
 
-<div className="container">
+                <div  style={{marginLeft: "auto", marginRight: "40%"}}>
+
+{/* <div className="container" style={{minWidth: "100vw"}}>
       <Jumbotron fluid>
         <h1>Happy Paws Clubhouse</h1>
       </Jumbotron>
-    </div>
-                        <form onSubmit={handleSubmit}>
+    </div> */}
+                        <form onSubmit={handleSubmit}  style={{marginLeft: "auto", marginRight: "auto"}}>
                         <h1>Request Your Stay Today!</h1>
                                 <label className='FormLabel'>Your Name </label>
                                 <input className='FormInput' type="text" id="UserNameinput" name="UserName" required onChange={(e) => { setUserName(e.target.value) }} /><br />
@@ -280,6 +277,7 @@ export function Reservation() {
                                 <div>{ReturnEndDate}</div>
 
 
+                        </div>
                         </div>
 
                         {/* <button  className='FormLabel' onClick={pullAllData}>pull all data </button> */}

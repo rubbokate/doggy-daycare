@@ -6,7 +6,8 @@ import copper from "../data/icons/copper.jpg"
 import stroller2 from "../data/icons/stroller2.jpg";
 import watermelon from "../data/icons/watermelon.jpg"
 import { Card } from 'react-bootstrap';
-import { Jumbotron } from 'react-bootstrap';
+import Image from 'react-bootstrap/Image'
+// import { Jumbotron } from 'react-bootstrap';
 
 import '../style.css';
 
@@ -45,11 +46,11 @@ export const Home = () => (
 
   <div>
 
-    <div className="container">
+    {/* <div className="container">
       <Jumbotron fluid>
         <h1>Happy Paws Clubhouse</h1>
       </Jumbotron>
-    </div>
+    </div> */}
     <br></br>
     <div className="card-deck">
       {/* <div className="row mb-8">
@@ -96,12 +97,12 @@ export const Home = () => (
     <div className="row" style={{ backgroundColor: "#4c91ad" }}>
       <div className="col-sm-8">
         <div style={{ backgroundColor: "#4c91ad" }}>
-          <div className="row card-body" style={{ marginLeft: "25%", minWidth: "100%", backgroundColor: "#4c91ad" }}>
+          <div className="row card-body" style={{ marginLeft: "25%", minWidth: "100%", backgroundColor: "#4c91ad", borderRadius: "25%", flex: "1"}}>
             <div className="col-sm-6">
               <h1 className="card-title">Need to book your pets stay with us?</h1>
               <a href="../Reservation/index.js" className="btn btn-danger">Book Now!</a>
             </div>
-            <img className="col-sm-6" src={Jersery} alt="chihuahua" />
+            <Image className="col-sm-6" src={Jersery} alt="chihuahua" style={{ flex: "1", borderRadius: "10%"}} />
           </div>
 
             </div>
@@ -128,7 +129,7 @@ export const Home = () => (
           <hr></hr>
 
           <Card style={middleContainer}>
-            <Card.Img variant="top" src={copper} style={{ borderRadius: "10% 10% 0 0", maxHeight: "50%", minHeight: "50%" }} />
+            <Card.Img variant="top" src={copper} style={{ borderRadius: "8% 8% 0 0", maxHeight: "50%", minHeight: "50%" }} />
             <Card.Body>
               {/* <Card.Title>Card Title</Card.Title> */}
               <Card.Text style={{ textAlign: "center", marginTop: "50%" }}>
