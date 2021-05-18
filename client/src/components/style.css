@@ -37,16 +37,20 @@ h2, p{
 #pawery{
     color: navy;
     text-align: center;
+
 }
 
 #ctp{
     display: block;
     margin-right: auto;
     width: 100%;
+
 }
 
 #daycard{
     color: navy;
     text-align: center;
 }
+
+
 
