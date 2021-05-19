@@ -16,6 +16,23 @@ This is a React based app designed to help users book boarding and training date
 1. Clone this repo 
 2. Install the dependencies
 3. On the server side run npm start in your terminal 
+  ## Screen shots 
+  ![image](https://user-images.githubusercontent.com/74007392/118893753-f6e76400-b8d0-11eb-933e-f132b0bf99ff.png) 
+  
+  ## Technologies 
+**React
+**React-Bootstrap
+**Concurrently
+**Passport-Authentication
+**Mongo 
+**Mongoose
+**Axios 
+HTML 
+CSS  
+Dateformat 
+CORS
+
+
   ## Usage    
   It is a deployed website so it should be used for commercial purposes   
   ## License   
