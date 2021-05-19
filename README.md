@@ -20,17 +20,17 @@ This is a React based app designed to help users book boarding and training date
   ![image](https://user-images.githubusercontent.com/74007392/118893753-f6e76400-b8d0-11eb-933e-f132b0bf99ff.png) 
   
   ## Technologies 
-*React
-*React-Bootstrap
-*Concurrently
-*Passport-Authentication
-*Mongo 
-**Mongoose
-**Axios 
-HTML 
-CSS  
-Dateformat 
-CORS
+* React
+* React-Bootstrap
+* Concurrently
+* Passport-Authentication
+* Mongo 
+* Mongoose
+* Axios 
+* HTML 
+* CSS  
+* Dateformat 
+* CORS
 
 
   ## Usage    
