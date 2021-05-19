@@ -11,7 +11,7 @@ const passport = require("./passport/setup");
 const app = express();
 const PORT = 3001;
 
-const MONGO_URI = "mongodb://localhost:27017/doggydaycare";
+const MONGO_URI = process.env.MONGODB_URI || "mongodb://localhost:27017/doggydaycare";
 
 mongoose
     .connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
