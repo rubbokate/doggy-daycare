@@ -93,9 +93,10 @@ export function Reservation() {
 
   return (
     <div>
+    <h1 style={{minWidth: "100%", display: "inline", flex: "1"}}>Request Your Stay!</h1>
     
       <form onSubmit={handleSubmit}>
-        <h1>Request Your Stay Today!</h1>
+        
         <label className="FormLabel">Your Name </label>
         <input
           className="FormInput"
