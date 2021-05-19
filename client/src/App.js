@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Home } from './components/Home/Home.js';
 import { Board } from './components/Board.js/Board.js';
 import { Daycare } from './components/Daycare/Daycare.js';
@@ -45,9 +45,9 @@ class App extends Component {
 
                   <Switch>
                     <Route exact path="/" component={Home} />
-                    <Route path="/board" component={Board} />
-                    <Route path="/daycare" component={Daycare} />
-                    <Route path="/reservation" component={Reservation} />
+                    <Route exact path="/board" component={Board} />
+                    <Route exact path="/daycare" component={Daycare} />
+                    <Route exact path="/reservation" component={Reservation} />
                     <Route component={NoMatch} />
                   </Switch>
                 </Layout>
