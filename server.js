@@ -11,10 +11,16 @@ const passport = require("./passport/setup");
 const app = express();
 const PORT = 3001;
 
-const MONGO_URI = process.env.MONGODB_URI || "mongodb://localhost:27017/doggydaycare";
+const MONGO_URI = MONGODB_URI || "mongodb://localhost:27017/doggydaycare";
+
+if (process.env.NODE_ENV === "production") {
+    app.use(express.static("client/build"));
+  }
+ 
+
 
 mongoose
-    .connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
+    .connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
     .then(console.log(`MongoDB connected ${MONGO_URI}`))
     .catch(err => console.log(err));
 
