@@ -2,7 +2,7 @@ import React from "react";
 
 import { StyledFooter } from "./styles";
 import ModalButton from "../ModalButton";
-import Login from "../../Modal2/index";
+// import Login from "../../Modal2/index";
 
 const style = {
     backgroundColor: "midnightblue",
@@ -17,7 +17,7 @@ const Footer = () => {
 
             <ModalButton />
             </div>
-            <Login />
+            {/* <Login /> */}
             
 
 
