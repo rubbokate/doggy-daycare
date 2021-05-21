@@ -28,11 +28,12 @@ const bottomContainer = {
 }
 
 const buttonDiv = {
-        borderRadius: "25px",
-        border: "solid",
-        boxShadow: "10px 10px 5px black",
+        // borderRadius: "25px",
+        // border: "solid",
+        // boxShadow: "10px 10px 5px black",
         marginLeft: "35%",
         marginRight: "25%",
+        
 
 
 }
@@ -68,19 +69,20 @@ export const Board = () => (
 
                         {/* <div style={{ marginLeft: "auto", marginRight: "auto" }}> */}
                         <H1><u><h1>Dog Boarding</h1></u>
-                                <p>
+                               <small><p style={{textAlign: "left"}}> 
 
 
                                         <span><small>Boarding  your dog at Happy Paws Clubhouse is super easy all you have to do is push the book now button on the home or boarding page. Just like booking a hotel. You can also add fun things to your dogs stay like a delicious bedtime snack or a personal playtime with the coach!</small></span>
                                         <br></br>
 
-                                </p>
+                                </p></small> 
                         </H1>
 
                         <div id="button-div">
-                                <button style={buttonDiv} onMouseEnter={changeButtonBackgroundColor} onMouseLeave={changeButtonBackgroundColor}>
+                        {/* <a href="../reservation/" className="btn btn-danger">Book Now!</a> */}
+                                <a style={buttonDiv} onMouseEnter={changeButtonBackgroundColor} onMouseLeave={changeButtonBackgroundColor} href="../reservation/"  className="btn btn-danger" >
                                         Book your dog's stay today!
-                        </button>
+                        </a>
                         </div>
                         <hr></hr>
 

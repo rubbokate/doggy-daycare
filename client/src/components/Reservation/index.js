@@ -92,7 +92,7 @@ export function Reservation() {
   });
 
   return (
-    <div>
+    <div style={{marginTop: "70%"}}>
     <h1 style={{minWidth: "100%", display: "inline", flex: "1"}}>Request Your Stay!</h1>
     
       <form onSubmit={handleSubmit}>
