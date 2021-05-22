@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { 
-  HashRouter as Router, Route, Switch } from 'react-router-dom';
+
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import { Home } from './components/Home/Home.js';
-import { Board } from './components/Board.js/Board.js';
+import { Board } from './components/Board/Board.js';
 import { Daycare } from './components/Daycare/Daycare.js';
 import { Reservation } from './components/Reservation';
 import { NoMatch } from './components/NoMatch/NoMatch.js';

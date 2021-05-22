@@ -9,7 +9,7 @@ const passport = require("./passport/setup");
 // 
 
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 const MONGO_URI = "mongodb://localhost:27017/doggydaycare";
 
