@@ -29,10 +29,10 @@ export const NavigationBar = () => (
             <Dropdown as={NavItem}>
                 <Dropdown.Toggle as={NavLink}><Navbar.Toggle aria-controls="basic-navbar-nav" /></Dropdown.Toggle>
                 <Dropdown.Menu>
-                    <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link href="/board">Board</Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link href="/daycare">Daycare</Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link href="/reservation">Reservation</Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link to="/">Home</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link to="/board">Board</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link to="/daycare">Daycare</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link to="/reservation">Reservation</Nav.Link></Nav.Item>
                 </Dropdown.Menu>
             </Dropdown>
 

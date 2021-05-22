@@ -4,8 +4,8 @@ const apiRoutes = require("./api");
 
 
 // API Routes
-router.use("/#/api", apiRoutes);
-router.use("/#/", apiRoutes);
+router.use("/api", apiRoutes);
+router.use("/", apiRoutes);
 
 // router.post('/', (req, res) => console.log(res.body));
 
