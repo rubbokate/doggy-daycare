@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-import {H1} from './styles';
+import { H1 } from './styles';
 
 
 // import {HighLighted} from "./divStyle";
@@ -55,7 +55,7 @@ export const Daycare = () => (
 
         <div>
 
-{/* <div className="container">
+                {/* <div className="container">
       <Jumbotron fluid>
         <h1>Happy Paws Clubhouse</h1>
       </Jumbotron>
@@ -68,7 +68,7 @@ export const Daycare = () => (
 
                         <div style={{ marginLeft: "auto", marginRight: "auto" }}>
                                 <H1><u><h1>Daycare</h1></u>
-                                <small><p>Daycare is a great way to get your dog’s energy out while you are at work.</p></small>
+                                        <small><p>Daycare is a great way to get your dog’s energy out while you are at work.</p></small>
                                 </H1>
 
                         </div>
@@ -90,40 +90,40 @@ export const Daycare = () => (
 
                         <div style={{ marginLeft: "auto", marginRight: "auto" }}>
                                 <H1><u><h1>Daycare Prices & Packages</h1></u>
-                                <p>
+                                        <p>
 
 
-                                        {/* <u><span style={{color: "green"}}><small><i>Discounts apply to families with multiple pets.</i></small></span></u> */}
-                                       
+                                                {/* <u><span style={{color: "green"}}><small><i>Discounts apply to families with multiple pets.</i></small></span></u> */}
 
-                                        <li>Whole Day - $25</li>
-                                        <li>Half Day - $15</li>
 
-                                        <br></br>
-                                        
-                                        *** Doggie Daycare Package Deals ***
+                                                <li>Whole Day - $25</li>
+                                                <li>Half Day - $15</li>
 
-                                         <li>10 Days $200 – SAVE $50</li>
-                                        <li>20 Days $400 – SAVE $100</li>
-                                        <li>30 Days $600 – SAVE $150</li>
+                                                <br></br>
 
-                                </p>
+                                                *** Doggie Daycare Package Deals ***
+
+                                                <li>10 Days $200 – SAVE $50</li>
+                                                <li>20 Days $400 – SAVE $100</li>
+                                                <li>30 Days $600 – SAVE $150</li>
+
+                                        </p>
                                 </H1>
 
 
                         </div>
 
-                
+
                         <hr></hr>
                 </div>
 
                 <br></br>
 
 
-                
-                        <br></br>
-                        <hr></hr>
-               
+
+                <br></br>
+                <hr></hr>
+
 
                 <br></br>
 
