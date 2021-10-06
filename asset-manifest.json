@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/doggy-daycare/static/css/main.a1b08a55.chunk.css",
+    "main.js": "/doggy-daycare/static/js/main.77f9ce03.chunk.js",
+    "main.js.map": "/doggy-daycare/static/js/main.77f9ce03.chunk.js.map",
+    "runtime-main.js": "/doggy-daycare/static/js/runtime-main.60d8d333.js",
+    "runtime-main.js.map": "/doggy-daycare/static/js/runtime-main.60d8d333.js.map",
+    "static/js/2.62fa318d.chunk.js": "/doggy-daycare/static/js/2.62fa318d.chunk.js",
+    "static/js/2.62fa318d.chunk.js.map": "/doggy-daycare/static/js/2.62fa318d.chunk.js.map",
+    "static/js/3.c69a6443.chunk.js": "/doggy-daycare/static/js/3.c69a6443.chunk.js",
+    "static/js/3.c69a6443.chunk.js.map": "/doggy-daycare/static/js/3.c69a6443.chunk.js.map",
+    "index.html": "/doggy-daycare/index.html",
+    "static/css/main.a1b08a55.chunk.css.map": "/doggy-daycare/static/css/main.a1b08a55.chunk.css.map",
+    "static/js/2.62fa318d.chunk.js.LICENSE.txt": "/doggy-daycare/static/js/2.62fa318d.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/doggy-daycare/static/media/back-jumbo.76ef87a4.png",
+    "static/media/bloo.47360ffc.jpg": "/doggy-daycare/static/media/bloo.47360ffc.jpg",
+    "static/media/copper.b4995571.jpg": "/doggy-daycare/static/media/copper.b4995571.jpg",
+    "static/media/jersery-1.895d1698.jpeg": "/doggy-daycare/static/media/jersery-1.895d1698.jpeg",
+    "static/media/pupcake-1.648770b1.jpeg": "/doggy-daycare/static/media/pupcake-1.648770b1.jpeg",
+    "static/media/stroller2.bd6c29cb.jpg": "/doggy-daycare/static/media/stroller2.bd6c29cb.jpg",
+    "static/media/watermelon.a112b296.jpg": "/doggy-daycare/static/media/watermelon.a112b296.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.60d8d333.js",
+    "static/js/2.62fa318d.chunk.js",
+    "static/css/main.a1b08a55.chunk.css",
+    "static/js/main.77f9ce03.chunk.js"
+  ]
+}
