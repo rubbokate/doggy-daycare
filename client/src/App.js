@@ -5,7 +5,7 @@ import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import { Home } from './components/pages/Home/Home.js';
 import { Board } from './components/pages/Board/Board.js';
 import { Daycare } from './components/pages/Daycare/Daycare.js';
-import { Reservation } from './components/Reservation';
+import { Reservation } from './components/pages/Reservation';
 import { NoMatch } from './components/NoMatch/NoMatch.js';
 import { Layout } from './components/Layouts/Layout.js';
 import { NavigationBar } from './components/Navbar/NavigationBar';
