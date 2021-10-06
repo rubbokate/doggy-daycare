@@ -2,16 +2,16 @@ import React, { Component } from 'react';
 
 // import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
-import { Home } from './components/Home/Home.js';
-import { Board } from './components/Board/Board.js';
-import { Daycare } from './components/Daycare/Daycare.js';
-import { Reservation } from './components/Reservation';
+import { Home } from './components/pages/Home/Home.js';
+import { Board } from './components/pages/Board/Board.js';
+import { Daycare } from './components/pages/Daycare/Daycare.js';
+import { Reservation } from './components/pages/Reservation';
 import { NoMatch } from './components/NoMatch/NoMatch.js';
 import { Layout } from './components/Layouts/Layout.js';
 import { NavigationBar } from './components/Navbar/NavigationBar';
 import './components/style.css'
 import Footer from './components/Modal/Footer';
-import { GlowStyle } from './components/Daycare/styles';
+// import { GlowStyle } from './components/Daycare/styles';
 import {Jumbotron} from "react-bootstrap";
 
 // why are we using a react fragment??
@@ -19,27 +19,26 @@ class App extends Component {
   render() {
     return (
 
-      <div style={{ minWidth: "100%"}}>
+      <div>
 
         <NavigationBar />
-
         <div className="container">
       <Jumbotron fluid>
         <h1>Happy Paws Clubhouse</h1>
       </Jumbotron>
     </div>
 
-        <div className="row" style={{ minWidth: "100%", display: "inline-flex" }}>
+        <div className="row">
 
           <div style={{maxWidth: "10%", marginLeft: "auto", marginRight: "auto", marginTop: "25%", marginBottom: "25%", float: "left"}}>
 
-            <GlowStyle />
+            {/* <GlowStyle /> */}
 
           </div>
 
-          <div style={{ maxWidth: "60%"}}>
+          <div>
 
-            <React.Fragment>
+            {/* <React.Fragment> */}
 
               <Router>
 
@@ -56,13 +55,13 @@ class App extends Component {
 
               </Router>
 
-            </React.Fragment>
+            {/* </React.Fragment> */}
 
           </div>
 
           <div style={{maxWidth: "10%", marginLeft: "auto", marginRight: "auto", marginTop: "25%", marginBottom: "25%", float: "right"}}>
 
-            <GlowStyle />
+            {/* <GlowStyle /> */}
 
           </div>
 

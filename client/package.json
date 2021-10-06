@@ -2,6 +2,7 @@
   "name": "happy-paws",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jjg1488.github.io/doggy-daycare/",
   "proxy": "http://localhost:3001",
   "dependencies": {
     "@emotion/react": "^11.4.0",
@@ -33,6 +34,8 @@
     "zxcvbn": "^4.4.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -55,5 +58,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }

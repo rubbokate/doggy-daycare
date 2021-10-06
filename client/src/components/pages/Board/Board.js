@@ -1,9 +1,9 @@
 import React from 'react';
 // import { Jumbotron } from 'react-bootstrap';
 // import bigDog from "../../components/data/icons/bigDog.jpeg";
-import backJumbo from "../../components/data/icons/back-jumbo.png";
+import backJumbo from "../../data/icons/back-jumbo.png";
 import { H1 } from "../Daycare/styles";
-import "../style.css"
+import "../../style.css"
 
 
 
