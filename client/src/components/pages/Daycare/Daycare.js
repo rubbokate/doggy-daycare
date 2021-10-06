@@ -8,9 +8,9 @@ import { H1 } from './styles';
 
 
 // import { Jumbotron} from 'react-bootstrap';
-import backJumbo from "../data/icons/back-jumbo.png";
+import backJumbo from "../../data/icons/back-jumbo.png";
 // import dog1 from "../data/icons/dog1.jpg";
-import "../style.css";
+import "../../style.css";
 
 
 
@@ -79,7 +79,6 @@ export const Daycare = () => (
                 <ScribbleText>
                 
                         Daycare
-               
 
                 </ScribbleText> */}
 

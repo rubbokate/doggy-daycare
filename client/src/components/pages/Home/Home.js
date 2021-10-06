@@ -1,15 +1,15 @@
 import React from 'react';
-import Pupcake from '../data/icons/pupcake-1.jpeg';
-import Jersery from '../data/icons/jersery-1.jpeg';
-import bloo from "../data/icons/bloo.jpg";
-import copper from "../data/icons/copper.jpg"
-import stroller2 from "../data/icons/stroller2.jpg";
-import watermelon from "../data/icons/watermelon.jpg"
+import Pupcake from '../../data/icons/pupcake-1.jpeg';
+import Jersery from '../../data/icons/jersery-1.jpeg';
+import bloo from "../../data/icons/bloo.jpg";
+import copper from "../../data/icons/copper.jpg"
+import stroller2 from "../../data/icons/stroller2.jpg";
+import watermelon from "../../data/icons/watermelon.jpg"
 import { Card} from 'react-bootstrap';
 import Image from 'react-bootstrap/Image'
 // import { Jumbotron } from 'react-bootstrap';
 
-import '../style.css';
+import '../../style.css';
 
 
 const leftContainer = {
