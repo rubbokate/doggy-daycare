@@ -9,7 +9,7 @@ import { Card} from 'react-bootstrap';
 import Image from 'react-bootstrap/Image'
 // import { Jumbotron } from 'react-bootstrap';
 
-import '../../style.css';
+import '../s../style.css';
 
 
 const leftContainer = {
